@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "youtube-link-transcriber"
+version = "0.1.0"
+description = "Transcribe YouTube links to TXT, Markdown, DOCX, and SRT with optional Obsidian and Notion sync"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "yt-dlp>=2025.1.0",
+  "faster-whisper>=1.0.3",
+  "python-docx>=1.1.2",
+  "requests>=2.32.3",
+  "python-dotenv>=1.0.1",
+  "rich>=13.9.4"
+]
+
+[tool.setuptools]
+packages = ["transcriber"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
