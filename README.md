@@ -16,8 +16,8 @@ A Python CLI project that downloads audio from a YouTube link, runs local transc
 ## Installation
 
 ```bash
-git clone https://github.com/almozodin/youtube-video-to-text.git
-cd youtube-video-to-text
+git clone https://github.com/your-username/youtube-link-transcriber.git
+cd youtube-link-transcriber
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
 pip install -r requirements.txt
